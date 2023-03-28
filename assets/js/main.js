@@ -10,7 +10,11 @@ addButton.addEventListener("click", function(){
     btnToDo.innerText = inputToDo.value;
 })
 
-inputToDo.addEventListener(InputEvent())
+inputToDo.addEventListener("keyup", function(event){
+    if(event.key == "Enter"){
+        btnToDo.innerText = inputToDo.value;
+    }
+})
 
 btnToDo.addEventListener("click", function(){
     btnDoing.innerText = btnToDo.textContent;

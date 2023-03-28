@@ -10,6 +10,8 @@ addButton.addEventListener("click", function(){
     btnToDo.innerText = inputToDo.value;
 })
 
+inputToDo.addEventListener(InputEvent())
+
 btnToDo.addEventListener("click", function(){
     btnDoing.innerText = btnToDo.textContent;
     btnToDo.remove();
